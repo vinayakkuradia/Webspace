@@ -9,6 +9,7 @@
 </head>
 <body>
 	<h3>YMSLI Trainees</h3>
+	<a href="logout">Logout</a>
 	<hr />
 	<table>
 		<tr>

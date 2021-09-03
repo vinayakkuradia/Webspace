@@ -28,11 +28,14 @@ public class UserDaoImpl implements UserDao {
 			preparedStatement = connection.prepareStatement("select * from users where username=? AND password=?");
 			preparedStatement.setString(1, username.trim());
 			preparedStatement.setString(2, password);
+			System.out.println(2);
 			ResultSet resultSet = preparedStatement.executeQuery();
+			System.out.println(3);
 			while (resultSet.next()) {
 				currentUser = new User(resultSet.getInt("userId"), resultSet.getString("username"), "",
-						UserType.valueOf(resultSet.getString("4")));
+						UserType.valueOf(resultSet.getString("userType")));
 			}
+			System.out.println(4);
 			System.out.println("** "+currentUser+" **");
 		} catch (SQLException e1) {
 			throw new UserNotFoundException("User not found");
