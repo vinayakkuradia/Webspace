@@ -1,0 +1,5 @@
+Pen 15
+Notebook 30
+Pencil 10
+Eraser 5
+Sharpener 8

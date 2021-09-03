@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Servlet Assignment - Question 11</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- -->
+
+	<servlet>
+		<description></description>
+		<display-name>ListenerTester</display-name>
+		<servlet-name>ListenerTester</servlet-name>
+		<servlet-class>ListenerTester</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListenerTester</servlet-name>
+		<url-pattern>/ListenerTester.do</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>driver</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+
+	<!-- -->
+
+	<filter>
+		<display-name>DemoFilter</display-name>
+		<filter-name>DemoFilter</filter-name>
+		<filter-class>DemoFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>DemoFilter</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+
+	<!-- -->
+
+	<listener>
+		<listener-class>DemoContextListner</listener-class>
+	</listener>
+</web-app>

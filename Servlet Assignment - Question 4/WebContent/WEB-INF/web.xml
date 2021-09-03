@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Servlet Assignment - Question 4</display-name>
+  <welcome-file-list>
+    <welcome-file>homepage.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Homepage</display-name>
+    <servlet-name>Homepage</servlet-name>
+    <servlet-class>giftshop.Homepage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Homepage</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Cards</display-name>
+    <servlet-name>Cards</servlet-name>
+    <servlet-class>giftshop.Cards</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cards</servlet-name>
+    <url-pattern>/cards</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Flowers</display-name>
+    <servlet-name>Flowers</servlet-name>
+    <servlet-class>giftshop.Flowers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Flowers</servlet-name>
+    <url-pattern>/flowers</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BillPage</display-name>
+    <servlet-name>BillPage</servlet-name>
+    <servlet-class>giftshop.BillPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BillPage</servlet-name>
+    <url-pattern>/billPage</url-pattern>
+  </servlet-mapping>
+</web-app>
